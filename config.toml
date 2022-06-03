@@ -55,9 +55,6 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
 
   # Social Icons
   # Check https://github.com/Track3/hermit#social-icons for more info.
-  [[params.social]]
-    name = "email"
-    url = "https://mailto:alexander.d.gimmi@gmail.com"
 
   [[params.social]]
     name = "github"
@@ -68,26 +65,30 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
     url = "https://twitter.com/iambroadband"
 
   [[params.social]]
-    name = "youtube"
-    url = "https://youtube.com/channel/UC6xvUC5NThwShk-wrhh01Mg"
+    name = "linkedin"
+    url = "https://linkedin.com/in/agimmi"
 
   [[params.social]]
     name = "twitch"
     url = "https://twitch.tv/ibroadband"
 
+  [[params.social]]
+    name = "youtube"
+    url = "https://youtube.com/channel/UC6xvUC5NThwShk-wrhh01Mg"
+
 [menu]
 
   [[menu.main]]
     name = "About"
-    url = "about-me/"
+    url = "about-me/index.html"
     weight = 10
 
   [[menu.main]]
     name = "Posts"
-    url = "posts/"
+    url = "posts/index.html"
     weight = 20
 
   [[menu.main]]
     name = "Resume"
-    url = "resume/"
+    url = "resume/index.html"
     weight = 30
