@@ -1,6 +1,7 @@
 ---
+author: 'Alexander Gimmi'
 title: 'My First Post'
-date: 2022-06-02T21:27:32-07:00
+date: 2022-06-02
 draft: false
 ---
 
