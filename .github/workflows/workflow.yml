@@ -12,11 +12,6 @@ jobs:
     name: Build and Deploy
     runs-on: ubuntu-latest
     steps:
-      - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          role-to-assume: arn:aws:iam::592831621615:role/github-role
-          aws-region: us-east-1
       - uses: actions/checkout@v1
       - name: Install Hugo
         run: |
