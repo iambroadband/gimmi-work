@@ -1,4 +1,5 @@
-name: Hugo S3
+# https://notestoself.dev/posts/deploy-hugo-site-github-actions-s3-cloudfront-aws-iam/
+name: Hugo S3 Build and Deploy
 
 on:
   push:
@@ -8,15 +9,23 @@ on:
 
 jobs:
   build:
+    name: Build and Deploy
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout main
-        uses: actions/checkout@main
-
-      - name: Deploy site
-        uses: plopcas/hugo-s3-action@v1.4.0
+      - uses: actions/checkout@v1
+      - name: Install Hugo
+        run: |
+          HUGO_DOWNLOAD=hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
+          wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${HUGO_DOWNLOAD}
+          tar xvzf ${HUGO_DOWNLOAD} hugo
+          mv hugo $HOME/hugo
         env:
-          AWS_REGION: 'us-east-1'
+          HUGO_VERSION: 0.100.1
+      - name: Hugo Build
+        run: $HOME/hugo -v --minify # Can add additional hugo flags here. Avoid --minify unless needed.
+      - name: Deploy to S3
+        if: github.ref == 'refs/heads/main'
+        run: aws s3 sync public/ s3://gimmi.work/ --delete --acl=public-read && aws cloudfront create-invalidation --distribution-id=E2HRE0PZQMAAFB --paths='/*'
+        env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
