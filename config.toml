@@ -92,3 +92,22 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
     name = "Resume"
     url = "resume/"
     weight = 30
+
+### Deployment Configuration ###
+[deployment]
+# By default, files are uploaded in an arbitrary order.
+# Files that match the regular expressions in the "Order" list
+# will be uploaded first, in the listed order.
+# order = [".jpg$", ".gif$"]
+
+[[deployment.targets]]
+# An arbitrary name for this target.
+name = "HugoDeployment"
+
+# S3; see https://gocloud.dev/howto/blob/#s3
+# For S3-compatible endpoints, see https://gocloud.dev/howto/blob/#s3-compatible
+# URL = "s3://<Bucket Name>?region=<AWS region>"
+URL = "s3://gimmi.work?region=us-east-1"
+
+# If you are using a CloudFront CDN, deploy will invalidate the cache as needed.
+cloudFrontDistributionID = "E2HRE0PZQMAAFB"
