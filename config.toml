@@ -111,3 +111,7 @@ URL = "s3://gimmi.work?region=us-east-1"
 
 # If you are using a CloudFront CDN, deploy will invalidate the cache as needed.
 cloudFrontDistributionID = "E2HRE0PZQMAAFB"
+
+[[deployment.matchers]]
+pattern = ".*" # Match all
+gzip = true
