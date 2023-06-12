@@ -1,6 +1,6 @@
 ---
 author: 'Alexander Gimmi'
-date: 2022-06-03
+date: 2023-06-12
 title: Resume
 draft: false
 ---
