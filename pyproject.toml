@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "gimmi-work"
+version = "0.1.0"
+description = "Personal portfolio for Alex Gimmi."
+authors = ["Alexander Gimmi <iambroadband@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.urls]
+homepage = "https://gimmi.work"
+repository = "https://github.com/iambroadband/gimmi-work"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+
+[tool.poetry.dependencies]
+python = "^3.11"
+invoke = "^2.0.0"
+livereload = "^2.0.0"
+markdown = "^3.0"
+pelican = "^4.0.0"
+typogrify = "^2.0.0"
