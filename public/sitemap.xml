@@ -2,37 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/about-me/</loc>
+    <loc>https://gimmi.work/about-me/</loc>
     <lastmod>2024-05-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://gimmi.work/</loc>
     <lastmod>2024-05-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/magic/</loc>
+    <loc>https://gimmi.work/tags/magic/</loc>
     <lastmod>2024-05-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://gimmi.work/posts/</loc>
     <lastmod>2024-05-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/scooze/</loc>
+    <loc>https://gimmi.work/resume/</loc>
     <lastmod>2024-05-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/scooze_intro/</loc>
+    <loc>https://gimmi.work/tags/scooze/</loc>
     <lastmod>2024-05-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://gimmi.work/posts/scooze_intro/</loc>
     <lastmod>2024-05-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/pioneer/</loc>
+    <loc>https://gimmi.work/tags/</loc>
+    <lastmod>2024-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://gimmi.work/tags/pioneer/</loc>
     <lastmod>2024-04-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/test-github-actions-post/</loc>
+    <loc>https://gimmi.work/posts/test-github-actions-post/</loc>
     <lastmod>2024-04-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/rcq/</loc>
+    <loc>https://gimmi.work/tags/rcq/</loc>
     <lastmod>2024-04-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/resume/</loc>
-    <lastmod>2023-06-12T00:00:00+00:00</lastmod>
   </url>
 </urlset>

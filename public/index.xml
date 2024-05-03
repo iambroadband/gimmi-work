@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Alex Gimmi</title>
-    <link>http://localhost:1313/</link>
+    <link>https://gimmi.work/</link>
     <description>Recent content on Alex Gimmi</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
     <lastBuildDate>Thu, 02 May 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://gimmi.work/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About Me</title>
-      <link>http://localhost:1313/about-me/</link>
+      <link>https://gimmi.work/about-me/</link>
       <pubDate>Thu, 02 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about-me/</guid>
+      <guid>https://gimmi.work/about-me/</guid>
       <description>Hello, I&amp;rsquo;m Alex and this is my portfolio! I&amp;rsquo;ll occasionally post about Magic and my hobby projects, but this site primarily exists to host my resume.&#xA;This site was built using Hugo and the Hermit-v2 theme. It is served via AWS CloudFront and uses GitHub Actions for CI/CD.</description>
     </item>
     <item>
       <title>Resume</title>
-      <link>http://localhost:1313/resume/</link>
+      <link>https://gimmi.work/resume/</link>
       <pubDate>Thu, 02 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/resume/</guid>
+      <guid>https://gimmi.work/resume/</guid>
       <description>Download as .pdf Previous Next &amp;nbsp; &amp;nbsp; Page: / </description>
     </item>
     <item>
       <title>scooze - Building Better Tooling for Magic: the Gathering</title>
-      <link>http://localhost:1313/posts/scooze_intro/</link>
+      <link>https://gimmi.work/posts/scooze_intro/</link>
       <pubDate>Thu, 02 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/scooze_intro/</guid>
+      <guid>https://gimmi.work/posts/scooze_intro/</guid>
       <description>Since last summer, I have been working with some friends to create better tools for developers working with Magic: the Gathering data. Card and deck data has historically been unapproachable for independent projects because of the amount of setup required just to represent these game objects. scooze aims to fix that!&#xA;from scooze import Card, Deck, Color card = Card(&amp;#34;Python&amp;#34;, colors=[Color.Black]) deck = Deck(archetype=&amp;#34;My Deck&amp;#34;, cards={card: 2}) deck.add_card(card, 2) We also support developing with scooze using Docker.</description>
     </item>
     <item>
       <title>Pioneer RCQ Win</title>
-      <link>http://localhost:1313/posts/test-github-actions-post/</link>
+      <link>https://gimmi.work/posts/test-github-actions-post/</link>
       <pubDate>Tue, 30 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/test-github-actions-post/</guid>
+      <guid>https://gimmi.work/posts/test-github-actions-post/</guid>
       <description>This past Sunday, I qualified for the NA Regional Championship in Washington DC by winning an RCQ with Boros Heroic. Here is what I played: </description>
     </item>
   </channel>
