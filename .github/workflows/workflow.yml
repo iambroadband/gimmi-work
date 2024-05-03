@@ -23,8 +23,8 @@ jobs:
         run: $HOME/hugo -v
       - name: Deploy to S3
         if: github.ref == 'refs/heads/main'
-        run: env
-          ls .
+        run: env &
+          ls . &
           aws s3 sync public/ s3://gimmi.work/ --region us-east-1 --delete --acl=public-read && aws cloudfront create-invalidation --distribution-id=E2HRE0PZQMAAFB --region us-east-1 --paths='/*'
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
