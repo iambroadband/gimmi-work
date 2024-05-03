@@ -1,9 +1,9 @@
 ---
-author: 'Alexander Gimmi'
-date: 2023-06-12
+author: 'Alex'
+date: 2024-05-02
 title: Resume
 draft: false
 ---
 
 [Download as .pdf](/resume.pdf)
-{{< embed-pdf url="/resume.pdf" hidePaginator="true" >}}
+{{< embed-pdf url="./resume.pdf" hidePaginator="true" >}}
