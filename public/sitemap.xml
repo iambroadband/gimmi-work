@@ -3,6 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <loc>http://localhost:1313/about-me/</loc>
     <lastmod>2024-05-02T00:00:00+00:00</lastmod>
   </url><url>
@@ -42,6 +43,14 @@
     <loc>http://localhost:1313/resume/</loc>
     <lastmod>2023-06-12T00:00:00+00:00</lastmod>
   </url><url>
+=======
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2023-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/resume/</loc>
+    <lastmod>2023-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+>>>>>>> Stashed changes
     <loc>http://localhost:1313/posts/</loc>
     <lastmod>2022-06-06T00:00:00+00:00</lastmod>
   </url><url>
@@ -55,6 +64,9 @@
     <lastmod>2022-06-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   </url>
 </urlset>
