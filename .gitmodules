@@ -1,10 +1,4 @@
-[submodule "themes/hermit"]
-	path = themes/hermit
-	url = https://github.com/Track3/hermit.git
 [submodule "themes/hermit-v2"]
 	path = themes/hermit-v2
 	url = https://github.com/1bl4z3r/hermit-V2
 	branch = main
-[submodule "themes/hugo-embed-pdf-shortcode"]
-	path = themes/hugo-embed-pdf-shortcode
-	url = https://github.com/anvithks/hugo-embed-pdf-shortcode.git
