@@ -5,4 +5,5 @@ title: Resume
 draft: false
 ---
 
+[Download Resume](/resume.pdf)
 {{< embed-pdf "/resume.pdf" >}}
