@@ -1,5 +1,5 @@
 ---
-author: 'Alexander Gimmi'
+author: 'Alex'
 date: 2024-05-02
 title: About Me
 draft: false

@@ -17,6 +17,13 @@
       <description>Hello, I&amp;rsquo;m Alex and this is my portfolio! I&amp;rsquo;ll occasionally post about Magic and my hobby projects, but this site primarily exists to host my resume.&#xA;This site was built using Hugo and the Hermit-v2 theme. It is served via AWS CloudFront and uses GitHub Actions for CI/CD.</description>
     </item>
     <item>
+      <title>Resume</title>
+      <link>http://localhost:1313/resume/</link>
+      <pubDate>Thu, 02 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/resume/</guid>
+      <description>Download as .pdf Previous Next &amp;nbsp; &amp;nbsp; Page: / </description>
+    </item>
+    <item>
       <title>scooze - Building Better Tooling for Magic: the Gathering</title>
       <link>http://localhost:1313/posts/scooze_intro/</link>
       <pubDate>Thu, 02 May 2024 00:00:00 +0000</pubDate>
@@ -29,13 +36,6 @@
       <pubDate>Tue, 30 Apr 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/test-github-actions-post/</guid>
       <description>This past Sunday, I qualified for the NA Regional Championship in Washington DC by winning an RCQ with Boros Heroic. Here is what I played: </description>
-    </item>
-    <item>
-      <title>Resume</title>
-      <link>http://localhost:1313/resume/</link>
-      <pubDate>Mon, 12 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/resume/</guid>
-      <description>Download as .pdf Previous Next &amp;nbsp; &amp;nbsp; Page: / </description>
     </item>
   </channel>
 </rss>
