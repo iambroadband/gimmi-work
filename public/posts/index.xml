@@ -1,20 +1,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Posts on Alex Gimmi</title>
-		<link>http://localhost:44013/posts/</link>
+		<link>https://gimmi.work/posts/</link>
 		<description>Recent content in Posts on Alex Gimmi</description>
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
 		<lastBuildDate>Thu, 02 May 2024 00:00:00 +0000</lastBuildDate>
-		<atom:link href="http://localhost:44013/posts/index.xml" rel="self" type="application/rss+xml" />
+		<atom:link href="https://gimmi.work/posts/index.xml" rel="self" type="application/rss+xml" />
 		
 		<item>
 			<title>scooze - Building Better Tooling for Magic: the Gathering</title>
-			<link>http://localhost:44013/posts/scooze_intro/</link>
+			<link>https://gimmi.work/posts/scooze_intro/</link>
 			<pubDate>Thu, 02 May 2024 00:00:00 +0000</pubDate>
 			
-			<guid>http://localhost:44013/posts/scooze_intro/</guid>
+			<guid>https://gimmi.work/posts/scooze_intro/</guid>
 			<description><![CDATA[%!s(<nil>)]]></description>
 			<content type="html"><![CDATA[<p>Since last summer, I have been working with some friends to create better tools for developers working with Magic: the Gathering data. Card and deck data has historically been unapproachable for independent projects because of the amount of setup required just to represent these game objects. <a href="https://github.com/arcavios/scooze">scooze</a> aims to fix that!</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">scooze</span> <span class="kn">import</span> <span class="n">Card</span><span class="p">,</span> <span class="n">Deck</span><span class="p">,</span> <span class="n">Color</span>
@@ -38,10 +38,10 @@
 		
 		<item>
 			<title>Pioneer RCQ Win</title>
-			<link>http://localhost:44013/posts/test-github-actions-post/</link>
+			<link>https://gimmi.work/posts/test-github-actions-post/</link>
 			<pubDate>Tue, 30 Apr 2024 00:00:00 +0000</pubDate>
 			
-			<guid>http://localhost:44013/posts/test-github-actions-post/</guid>
+			<guid>https://gimmi.work/posts/test-github-actions-post/</guid>
 			<description><![CDATA[%!s(<nil>)]]></description>
 			<content type="html"><![CDATA[<p>This past Sunday, I qualified for the NA Regional Championship in Washington DC by winning an RCQ with Boros Heroic. <a href="https://twitter.com/iambroadband/status/1784786575181906351">Here</a> is what I played:
 <img src="https://pbs.twimg.com/media/GMTV8CfaUAAIcgv?format=jpg" alt="Deck Pic"></p>
