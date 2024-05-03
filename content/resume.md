@@ -5,5 +5,5 @@ title: Resume
 draft: false
 ---
 
-[Download as .pdf](./resume.pdf)
-{{< embed-pdf url="./resume.pdf" hidePaginator="true" >}}
+[Download as .pdf](resume.pdf)
+{{< embed-pdf url="resume.pdf" hidePaginator="true" >}}
