@@ -2,10 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Alex Gimmi</title>
-    <link>https://gimmi.work/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Alex Gimmi</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://gimmi.work/tags/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Thu, 02 May 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Magic</title>
+      <link>http://localhost:1313/tags/magic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/magic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scooze</title>
+      <link>http://localhost:1313/tags/scooze/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/scooze/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pioneer</title>
+      <link>http://localhost:1313/tags/pioneer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/pioneer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rcq</title>
+      <link>http://localhost:1313/tags/rcq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/rcq/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
