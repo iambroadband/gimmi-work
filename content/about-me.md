@@ -1,8 +1,10 @@
 ---
 author: 'Alexander Gimmi'
-date: 2022-06-03
+date: 2024-05-02
 title: About Me
 draft: false
 ---
 
-Hello, I am Alex :) This site is a work in progress as I learn more about Hugo and the various hosting tools I am using. This was posted using GitHub actions! It triggers an s3 sync and cloudfront createinvalidation on every push and pull request.
+Hello, I'm Alex and this is my portfolio! I'll occasionally post about Magic and my hobby projects, but this site primarily exists to host my resume.
+
+This site was built using Hugo and the Hermit-v2 theme. It is served via AWS CloudFront and uses GitHub Actions for CI/CD.

@@ -1,8 +1,13 @@
 ---
-author: 'Alexander Gimmi'
-title: 'Test GitHub Actions Workflow'
-date: 2022-06-06
+author: 'Alex'
+title: 'Pioneer RCQ Win'
+date: 2024-04-30
 draft: false
+tags:
+    - magic
+    - pioneer
+    - rcq
 ---
 
-This is a test.
+This past Sunday, I qualified for the NA Regional Championship in Washington DC by winning an RCQ with Boros Heroic. [Here](https://twitter.com/iambroadband/status/1784786575181906351) is what I played:
+![Deck Pic](https://pbs.twimg.com/media/GMTV8CfaUAAIcgv?format=jpg)

@@ -1,33 +1,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Posts on Alex Gimmi</title>
-		<link>https://gimmi.work/posts/</link>
+		<link>http://localhost:1313/posts/</link>
 		<description>Recent content in Posts on Alex Gimmi</description>
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Mon, 06 Jun 2022 00:00:00 +0000</lastBuildDate>
-		<atom:link href="https://gimmi.work/posts/index.xml" rel="self" type="application/rss+xml" />
+		<lastBuildDate>Thu, 02 May 2024 00:00:00 +0000</lastBuildDate>
+		<atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
 		
 		<item>
-			<title>Test GitHub Actions Workflow</title>
-			<link>https://gimmi.work/posts/test-github-actions-post/</link>
-			<pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
+			<title>scooze - Building Better Tooling for Magic: the Gathering</title>
+			<link>http://localhost:1313/posts/scooze_intro/</link>
+			<pubDate>Thu, 02 May 2024 00:00:00 +0000</pubDate>
 			
-			<guid>https://gimmi.work/posts/test-github-actions-post/</guid>
-			<description>This is a test.</description>
-			<content type="html"><![CDATA[<p>This is a test.</p>
-]]></content>
+			<guid>http://localhost:1313/posts/scooze_intro/</guid>
+			<description><![CDATA[%!s(<nil>)]]></description>
+			<content type="html"><![CDATA[<p>Since last summer, I have been working with some friends to create better tools for developers working with Magic: the Gathering data. Card and deck data has historically been unapproachable for independent projects because of the amount of setup required just to represent these game objects. <a href="https://github.com/arcavios/scooze">scooze</a> aims to fix that!</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">scooze</span> <span class="kn">import</span> <span class="n">Card</span><span class="p">,</span> <span class="n">Deck</span><span class="p">,</span> <span class="n">Color</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">card</span> <span class="o">=</span> <span class="n">Card</span><span class="p">(</span><span class="s2">&#34;Python&#34;</span><span class="p">,</span> <span class="n">colors</span><span class="o">=</span><span class="p">[</span><span class="n">Color</span><span class="o">.</span><span class="n">Black</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">deck</span> <span class="o">=</span> <span class="n">Deck</span><span class="p">(</span><span class="n">archetype</span><span class="o">=</span><span class="s2">&#34;My Deck&#34;</span><span class="p">,</span> <span class="n">cards</span><span class="o">=</span><span class="p">{</span><span class="n">card</span><span class="p">:</span> <span class="mi">2</span><span class="p">})</span>
+</span></span><span class="line"><span class="cl"><span class="n">deck</span><span class="o">.</span><span class="n">add_card</span><span class="p">(</span><span class="n">card</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</span></span></code></pre></div><p>We also support developing with scooze using Docker. With scooze running in Docker, you can take advantage of all the data Scryfall has to offer, but without the hassle of making requests and dealing with rate limits.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">scooze setup docker
+</span></span><span class="line"><span class="cl">scooze load cards --oracle
+</span></span></code></pre></div><p>Our database models and dataclasses will automatically validate Scryfall data for you and take care of all the annoying parts of building Magic apps.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">scooze</span> <span class="kn">import</span> <span class="n">Color</span><span class="p">,</span> <span class="n">CardList</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">scooze.api</span> <span class="kn">import</span> <span class="n">ScoozeApi</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">with</span> <span class="n">ScoozeApi</span><span class="p">()</span> <span class="k">as</span> <span class="n">s</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">green_cards</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">get_cards_by</span><span class="p">(</span><span class="s2">&#34;colors&#34;</span><span class="p">,</span> <span class="p">[</span><span class="n">Color</span><span class="o">.</span><span class="n">GREEN</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">green_cards</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">c</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">c</span><span class="o">.</span><span class="n">mana_cost</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span></code></pre></div>]]></content>
 		</item>
 		
 		<item>
-			<title>My First Post</title>
-			<link>https://gimmi.work/posts/my-first-post/</link>
-			<pubDate>Thu, 02 Jun 2022 00:00:00 +0000</pubDate>
+			<title>Pioneer RCQ Win</title>
+			<link>http://localhost:1313/posts/test-github-actions-post/</link>
+			<pubDate>Tue, 30 Apr 2024 00:00:00 +0000</pubDate>
 			
-			<guid>https://gimmi.work/posts/my-first-post/</guid>
-			<description>This is my first post.</description>
-			<content type="html"><![CDATA[<p>This is my first post.</p>
+			<guid>http://localhost:1313/posts/test-github-actions-post/</guid>
+			<description><![CDATA[%!s(<nil>)]]></description>
+			<content type="html"><![CDATA[<p>This past Sunday, I qualified for the NA Regional Championship in Washington DC by winning an RCQ with Boros Heroic. <a href="https://twitter.com/iambroadband/status/1784786575181906351">Here</a> is what I played:
+<img src="https://pbs.twimg.com/media/GMTV8CfaUAAIcgv?format=jpg" alt="Deck Pic"></p>
 ]]></content>
 		</item>
 		
