@@ -4,8 +4,6 @@ name: Hugo S3 Build and Deploy
 on:
   push:
     branches: [main]
-  pull_request:
-    branches: [main]
 
 jobs:
   build:
@@ -22,10 +20,12 @@ jobs:
         env:
           HUGO_VERSION: 0.100.1
       - name: Hugo Build
-        run: $HOME/hugo -v --minify # Can add additional hugo flags here. Avoid --minify unless needed.
+        run: $HOME/hugo -v
       - name: Deploy to S3
         if: github.ref == 'refs/heads/main'
-        run: aws s3 sync public/ s3://gimmi.work/ --region us-east-1 --delete --acl=public-read && aws cloudfront create-invalidation --distribution-id=E2HRE0PZQMAAFB --region us-east-1 --paths='/*'
+        run: env
+          ls .
+          aws s3 sync public/ s3://gimmi.work/ --region us-east-1 --delete --acl=public-read && aws cloudfront create-invalidation --distribution-id=E2HRE0PZQMAAFB --region us-east-1 --paths='/*'
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
