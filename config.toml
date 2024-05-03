@@ -2,7 +2,8 @@ baseURL = "https://gimmi.work"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "Alex Gimmi"
-theme = "hermit-v2"
+theme = ["hugo-embed-pdf-shortcode", "hermit-v2"]
+enableInlineShortcodes = true
 # enableGitInfo = true
 pygmentsCodefences = true
 pygmentsUseClasses = true
@@ -107,7 +108,7 @@ weight = 30
 
 [[deployment.targets]]
 # An arbitrary name for this target.
-name = "HugoDeployment"
+name = "Default Deploy"
 
 # S3; see https://gocloud.dev/howto/blob/#s3
 # For S3-compatible endpoints, see https://gocloud.dev/howto/blob/#s3-compatible
