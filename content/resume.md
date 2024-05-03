@@ -6,4 +6,4 @@ draft: false
 ---
 
 [Download Resume](/resume.pdf)
-{{< embed-pdf "/resume.pdf" >}}
+{{< embed-pdf url="./resume.pdf" hidePaginator="true" >}}
